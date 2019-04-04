@@ -3,3 +3,10 @@ https://www.linode.com/docs/development/java/install-java-on-centos/
 [root@predix-devbox /]# whereis java
 java: /usr/bin/java /usr/lib/java /etc/java /usr/share/java
 
+
+HTTP Proxy Configuration
+ Server		Help for feature: Server
+ Port		Help for feature: Port
+	User name		Help for feature: User name
+ 	Password		
+No Proxy Host
