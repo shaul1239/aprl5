@@ -10,3 +10,4 @@ HTTP Proxy Configuration
 	User name		Help for feature: User name
  	Password		
 No Proxy Host
+http_proxy=http://PITC-Zscaler-ASPAC-Bangalore3PR.proxy.corporate.ge.com:80/
