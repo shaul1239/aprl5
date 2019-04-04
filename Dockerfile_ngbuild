@@ -1,0 +1,9 @@
+From alpine:latest # replace with your base image
+
+RUN apk add --update nodejs nodejs-npm
+RUN npm i -g @angular/cli
+RUN mkdir -p /opt/social/
+COPY social /opt/social/
+WORKDIR /opt/social/
+RUN npm rebuild node-sass
+RUN ng build
