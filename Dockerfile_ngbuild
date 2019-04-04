@@ -7,3 +7,25 @@ COPY social /opt/social/
 WORKDIR /opt/social/
 RUN npm rebuild node-sass
 RUN ng build
+
+
+[main]
+cachedir=/var/cache/yum/$basearch/$releasever
+debuglevel=2
+distroverpkg=centos-release
+exactarch=1
+gpgcheck=1
+installonly_limit=3
+keepcache=0
+localpkg_gpgcheck=0
+logfile=/var/log/yum.log
+obsoletes=1
+plugins
+
+
+proxy=http://PITC-Zscaler-ASPAC-Bangalore3PR.proxy.corporate.ge.com:80
+proxy=http://cis-india-pitc-bangalorez.proxy.corporate.ge.com:80
+HTTP_PROXY=http://cis-india-pitc-bangalorez.proxy.corporate.ge.com:80
+HTTPS_PROXY=http://cis-india-pitc-bangalorez.proxy.corporate.ge.com:80
+http_proxy=http://cis-india-pitc-bangalorez.proxy.corporate.ge.com:80
+https_proxy=http://cis-india-pitc-bangalorez.proxy.corporate.ge.com:80
