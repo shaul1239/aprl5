@@ -6,7 +6,8 @@ cd /etc/profile.d/
 vi maven.sh
 export M2_HOME=/opt/maven
 export PATH=${M2_HOME}/bin:${PATH}
-export PATH=$M2:$PATHchmod +x maven.sh 
+export PATH=$M2:$PATH
+chmod +x maven.sh 
 source /etc/profile.d/maven.sh
 mvn --version
 
