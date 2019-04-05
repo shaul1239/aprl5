@@ -4,9 +4,11 @@ tar -xvf apache-maven-3.5.4-bin.tar.gz
 mv apache-maven-3.5.4/ maven/ 
 cd /etc/profile.d/
 vi maven.sh
-export M2_HOME=/opt/maven
-export PATH=${M2_HOME}/bin:${PATH}
-export PATH=$M2:$PATH
+    export M2_HOME=/opt/maven
+    export PATH=${M2_HOME}/bin:${PATH}
+    export PATH=$M2:$PATH
+    
+####
 chmod +x maven.sh 
 source /etc/profile.d/maven.sh
 mvn --version
